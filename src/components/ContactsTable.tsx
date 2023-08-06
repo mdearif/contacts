@@ -40,18 +40,18 @@ export default function ContactsTable({data}: ContactsTablePropType) {
           </TableRow>
         </TableHead>
         <TableBody>
-            {data.map((row, index) => (
-                <TableRow
-                    key={index}
-                    sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                    >
-                    <TableCell component="th" scope="row">
-                        {row.firstname}
-                    </TableCell>
-                    <TableCell>{row.email}</TableCell>
-                    <TableCell>{row.phone[0].code}{row.phone[0].phone}</TableCell>
-                </TableRow>
-            ))}
+          {data.map((row, index) => (
+            <TableRow
+              key={index}
+              sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+              >
+              <TableCell component="th" scope="row">
+                  {row.firstname}
+              </TableCell>
+              <TableCell>{row.email}</TableCell>
+              <TableCell>{row.phone[0].code}{row.phone[0].phone}</TableCell>
+            </TableRow>
+          ))}
         </TableBody>
       </Table>
     </TableContainer>

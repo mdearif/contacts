@@ -51,12 +51,18 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-export default function SearchAppBar() {
+type SearchAppbarType = {
+  onMenuClick: () => void
+}
+
+export default function SearchAppBar(props: SearchAppbarType) {
+  const {onMenuClick} = props
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
           <IconButton
+            onClick={onMenuClick}
             size="large"
             edge="start"
             color="inherit"
