@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "firstname": "sadasd",
+        "lastname": "",
+        "email": "adasasd@asdas.com",
+        "phone": [
+            {
+                "code": "91",
+                "phone": "123123123",
+                "label": "home"
+            },
+            {
+                "code": "91",
+                "phone": "33333333",
+                "label": "work"
+            }
+        ],
+        "dob": "12/12/2003"
+    },
+    {
+        "id": 2,
+        "firstname": "aaaaaa",
+        "lastname": "bbbbbb",
+        "email": "adasasd@asdas.com",
+        "phone": [
+            {
+                "code": "91",
+                "phone": "2222222",
+                "label": "home"
+            },
+            {
+                "code": "91",
+                "phone": "444444444",
+                "label": "work"
+            }
+        ],
+        "dob": "12/10/2000"
+    }
+]
